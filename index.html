@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Chloe</title>
+    <meta name="description" content="Help Chloe end her suffering.">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body>
+    <!-- Use cursor.png for the custom cursor -->
+    <div id="cursor"><img src="images/cursor.png" style="width: 32px"></div>
+    <div id="overlay"></div>
+    <img id="profilePic" src="images/1.png">
+    <p id="dialogueBox" style="width: 80%"></p>
+    <div style="margin-left: auto; margin-right: auto; width: 80%; margin-top: 2px">
+        <div style="display: flex; gap: 15px">
+            <input id="inputField" class="divSquare" placeholder="Type a message..." style="
+                color: #0f8d4f;
+                opacity: 100;
+                width: 100%;
+                background-color: black;">
+            <div class="divSquare" id="submitButton" onmouseup="submitMessage()" style="opacity: 100">
+                <br>Submit
+            </div>
+        </div>
+    </div>
+    <a style="
+        color: #0f8d4f;
+        opacity: 100;
+        width: 100%;
+        background-color: black;
+        margin-bottom: auto;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;" 
+        href="https://pump.fun/6BpvXFUKmEB1KevvJFNrrWHXkexS6hqYQnFoivowpump" target="_blank">
+        CA: 
+    </a>
+    <script src="js/chloe.js"></script>
+    <script>
+        // Display Chloe's introductory message after the page loads
+        setTimeout(() => {
+            typeWriter("Hello Sir, I am Illiad, the keeper of truths.  And you, are but my humble student.  Are you prepared to the learn the ways of a true Trojan master? ");
+        }, 1000);
+    </script>
+</body>
+</html>
