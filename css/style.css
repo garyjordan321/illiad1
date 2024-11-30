@@ -1,0 +1,105 @@
+html, body {
+    min-height: 100%;
+    margin-top: 0;
+      margin-left: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: show;
+    background-color: black;
+      image-rendering: pixelated;
+      cursor: none;
+      -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;   
+  }
+  
+  #cursor {
+      position: absolute;
+      transform: scale(1.25);
+      pointer-events: none;
+  }
+  
+  #dialogueBox {
+    z-index: 1;
+    border: 8px solid #0f8d4f;
+    padding: 10px; 
+    min-height: 100px;
+    color: #0f8d4f;
+    font-family: consolas;
+    font-size: 24px;
+    text-align: center;
+    display: block;
+    margin-top: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    width: 318px;
+  }
+  
+  #overlay {
+      position: absolute;
+      z-index: 3;
+      pointer-events: none;
+      height: 110%;
+      width: 100%;
+      background-image: url(../images/CRTno.gif);
+      background-repeat: repeat;
+      filter: brightness(0);
+      opacity: 0.5;
+  }
+  
+  .divSquare{
+      width: 154px;
+      height: 56px;
+      margin-top: 4px;
+      margin-left: 2px;
+      margin-right: 2px;
+    border: 4px solid #0f8d4f;
+      float: left;
+      color: #0f8d4f;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      font-family: consolas;
+      font-size: 18px;
+      text-align: center;
+      opacity: 0;
+  }
+  
+  @keyframes appear {
+      0% {opacity: 0;}
+      80% {opacity: 1;}
+      85% {opacity: 0.25}
+      90% {opacity: 1}
+  }
+  
+  @keyframes disappear {
+      0% {opacity: 0;}
+      100% {opacity: 1}
+  }
+  
+  .divSquare:hover {
+      color: white;
+      border: 4px solid white;
+  }
+  
+  
+  #profilePic {
+    z-index: 1;
+    border: 8px solid #0f8d4f;
+    color: #0f8d4f;
+    display: block;
+      width: 318px;
+      margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  @media only screen and (max-width: 768px) {
+      #cursor {
+          visibility: hidden;
+      }
+      #profilePic {
+          margin-top: 10px;
+      }
+    }
